@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Путешествие по космосу</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #0b0d21 0%, #1a1f4b 60%, #2b1e57 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #7ecbff, #c58cff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #b9c2ff;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+        radial-gradient(1px 1px at 120px 80px, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 200px 150px, #fff, transparent),
+        radial-gradient(1px 1px at 300px 50px, #fff, transparent);
+      background-repeat: repeat;
+      background-size: 350px 200px;
+      opacity: 0.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(126, 203, 255, 0.25);
+    }
+
+    .card .emoji { font-size: 2.2rem; }
+    .card h2 { margin: 12px 0 8px; font-size: 1.3rem; }
+    .card p { color: #c9d1ff; font-size: 0.95rem; line-height: 1.5; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #8f97c9;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <h1>🚀 Путешествие по космосу</h1>
+    <p>Маленькая страничка о бескрайней вселенной</p>
+  </header>
+
+  <main class="cards">
+    <div class="card">
+      <div class="emoji">☀️</div>
+      <h2>Солнце</h2>
+      <p>Звезда в центре нашей системы. Её диаметр — около 1,4 млн км, а свет летит до Земли 8 минут.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🪐</div>
+      <h2>Юпитер</h2>
+      <p>Крупнейшая планета Солнечной системы. Его Большое красное пятно — шторм больше всей Земли.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌑</div>
+      <h2>Чёрные дыры</h2>
+      <p>Области с настолько сильной гравитацией, что даже свет не может их покинуть.</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌌</div>
+      <h2>Галактики</h2>
+      <p>Наш Млечный Путь содержит сотни миллиардов звёзд — и это лишь одна из триллионов галактик.</p>
+    </div>
+  </main>
+
+  <footer>
+    Сделано с ❤️ и HTML | 2026
+  </footer>
+</body>
+</html>
